@@ -1,81 +1,50 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wemathon 2025</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f8f9fa; }
-        header { background: #ffcc00; padding: 20px; font-size: 24px; font-weight: bold; }
-        section { padding: 50px 20px; }
-        .container { max-width: 900px; margin: auto; }
-        .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
-        .sponsor-logo { max-width: 150px; margin: 10px; }
-        .category { background: #007bff; color: white; padding: 10px; margin: 10px; border-radius: 5px; display: inline-block; }
-        footer { background: #222; color: white; padding: 20px; }
-    </style>
-</head>
-<body>
-    <header>Wemathon 2025 - Empowering Lives, One Step at a Time</header><section id="about">
-    <div class="container">
-        <h2>About Wema Centre</h2>
-        <p>Wema Centre is dedicated to rehabilitating and empowering street-connected children in Kenya. Through education, mentorship, and care, we provide a second chance to children in need.</p>
+import React from "react";
+
+export default function Wemathon2025() { return ( <div className="bg-gray-100 text-gray-900"> <header className="bg-green-600 text-white p-6 text-center text-2xl font-bold"> Wemathon 2025 - Empowering Lives, One Step at a Time </header>
+
+<section className="p-6 text-center">
+    <h2 className="text-xl font-bold">About Wema Centre</h2>
+    <p className="mt-2">Wema Centre is a non-profit organization dedicated to rehabilitating and empowering street-connected children.</p>
+  </section>
+  
+  <section className="p-6 bg-white text-center">
+    <h2 className="text-xl font-bold">Why Wemathon?</h2>
+    <p className="mt-2">Wemathon is held annually to raise funds and awareness for Wema Centre’s programs supporting vulnerable children.</p>
+  </section>
+  
+  <section className="p-6 text-center">
+    <h2 className="text-xl font-bold">Past Events</h2>
+    <div className="grid grid-cols-2 gap-4 mt-4">
+      <img src="/images/event1.jpg" alt="Wemathon 2023" className="rounded-lg shadow-lg" />
+      <img src="/images/event2.jpg" alt="Wemathon 2022" className="rounded-lg shadow-lg" />
     </div>
-</section>
+  </section>
+  
+  <section className="p-6 bg-white text-center">
+    <h2 className="text-xl font-bold">Our Sponsors</h2>
+    <p className="mt-2">Thank you to our valued partners for making Wemathon possible!</p>
+  </section>
+  
+  <section className="p-6 text-center">
+    <h2 className="text-xl font-bold">Schools & Groups</h2>
+    <p className="mt-2">Join as a school or community group to take part in an exciting and meaningful event.</p>
+  </section>
+  
+  <section className="p-6 bg-white text-center">
+    <h2 className="text-xl font-bold">Categories</h2>
+    <p className="mt-2">Choose from Running (5km, 10km, 21km), Walking (3km, 5km), or Cycling (10km, 21km).</p>
+  </section>
+  
+  <section className="p-6 text-center">
+    <h2 className="text-xl font-bold">Register & Pay</h2>
+    <a href="https://mpesaapp.page.link/BYut" target="_blank" className="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg shadow-lg text-lg">Pay via M-Pesa</a>
+  </section>
+  
+  <footer className="bg-gray-800 text-white text-center p-6 mt-6">
+    <p>Contact us: <a href="mailto:info@wemacentre.org" className="underline">info@wemacentre.org</a></p>
+    <p>Call us: 0722773363</p>
+  </footer>
+</div>
 
-<section id="why-wemathon">
-    <div class="container">
-        <h2>Why Wemathon?</h2>
-        <p>Wemathon is a fundraising event that supports Wema Centre’s programs. It raises awareness, promotes fitness, and fosters community engagement in helping vulnerable children.</p>
-    </div>
-</section>
+); }
 
-<section id="categories">
-    <div class="container">
-        <h2>Race Categories</h2>
-        <div class="category">5km & 10km Run</div>
-        <div class="category">21km Half Marathon</div>
-        <div class="category">3km & 5km Walk</div>
-        <div class="category">10km & 21km Cycling</div>
-    </div>
-</section>
-
-<section id="gallery">
-    <div class="container">
-        <h2>Photos from Past Events</h2>
-        <div class="gallery">
-            <img src="https://drive.google.com/file/d/1POc4WCDDNQ1l9YSTfjIJ4JhH3KBfys7U/view?usp=drivesdk" alt="Wemathon 2024">
-            
-
-        </div>
-    </div>
-</section>
-
-<section id="sponsors">
-    <div class="container">
-        <h2>Our Sponsors</h2>
-        <img src="sponsor1.png" alt="Sponsor 1" class="sponsor-logo">
-        <img src="sponsor2.png" alt="Sponsor 2" class="sponsor-logo">
-    </div>
-</section>
-
-<section id="schools-groups">
-    <div class="container">
-        <h2>Schools & Groups</h2>
-        <p>We encourage schools and community groups to join Wemathon. Special prizes and recognition will be given to the most engaged teams!</p>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@wemacentre.org">info@wemacentre.org</a></p>
-        <p>Call: <a href="tel:+254722773363">0722 773 363</a></p>
-    </div>
-</section>
-
-<footer>
-    &copy; 2025 Wemathon | Designed by Castles and Clowns Ltd
-</footer>
-
-</body>
-</html>
